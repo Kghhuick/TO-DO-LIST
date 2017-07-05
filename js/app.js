@@ -35,13 +35,15 @@ newLi.appendChild(complete);
 newLi.appendChild(delet);
 h.innerText = value;
 delet.classList.add("delete");
+complete.classList.add("completed");
 complete.innerText="Completed"
 delet.innerText="Delete"
 console.log(value);
 input.value= " ";
 
+return;
 
-return ul,delet;
+// return ul,delet,complete;
 }
 else {
   alert("task has to be longer then 5 and shorter then 100");
@@ -58,13 +60,19 @@ if(document.querySelector(".delete")!= null){
 
    });
  });
+ [...document.querySelectorAll(".completed")].forEach(function(el){
+  el.addEventListener("click",function(){
+  el.classList.add("blue");
 
 
 
+  });
+
+});
 }
-  else{
-    return;
- }
+ else {
+  return;
+}
 
 
 });

@@ -28,3 +28,9 @@ ul {
 .delete{
 background-color: red;
 }
+.completed {
+  border-color: blue;
+}
+.blue{
+  background-color: blue;
+}
