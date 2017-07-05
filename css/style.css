@@ -1,35 +1,31 @@
-
 body {
-background-image: url("../images/todo.jpg");
-margin: 0 auto;
-background-size: cover;
+  background-image: url("../images/todo.jpg");
+  margin: 0 auto;
+  background-size: cover;
 }
 
 .smallbox {
-
   margin: 0 auto;
   text-align: center;
   padding: 20px;
 }
- .smallbox input {
 
-   margin-bottom: 20px;
-   width:300px;
- }
+.smallbox input {
+  margin-bottom: 20px;
+  width: 300px;
+}
 
- .smallbox button{
-   display: inline-block;
-   margin-left: 10px;
-   width:120px;
-   height: 20px;
-   margin-top: 20px;
-   font-size: 10px;
-   background-color: beige;
+.smallbox button {
+  display: inline-block;
+  margin-left: 10px;
+  width: 120px;
+  height: 20px;
+  margin-top: 20px;
+  font-size: 10px;
+  background-color: beige;
+}
 
- }
-
-
-li{
+li {
   list-style: none;
   color: blue;
 }
@@ -38,23 +34,23 @@ ul {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
-
 }
 
-.delete{
-background-color: red;
+.delete {
+  background-color: red;
 }
+
 .completed {
   border-color: blue;
 }
-.blue{
+
+.blue {
   background-color: blue;
 }
 
-h2{
+h2 {
   font-size: 60px;
   margin: 0 auto;
-  color:#17009C;
+  color: #17009C;
   margin-bottom: 20px;
-
 }
