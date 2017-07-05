@@ -1,17 +1,33 @@
 
 body {
-background-color: rgba(255, 200, 127, 0.5);
+background-image: url("../images/todo.jpg");
+margin: 0 auto;
+background-size: cover;
 }
 
-.container {
-  width:1200px;
+.smallbox {
+
   margin: 0 auto;
   text-align: center;
-  background-image: url("../images/todo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px;
+  padding: 20px;
 }
+ .smallbox input {
+
+   margin-bottom: 20px;
+   width:300px;
+ }
+
+ .smallbox button{
+   display: inline-block;
+   margin-left: 10px;
+   width:120px;
+   height: 20px;
+   margin-top: 20px;
+   font-size: 10px;
+   background-color: beige;
+
+ }
+
 
 li{
   list-style: none;
@@ -33,4 +49,12 @@ background-color: red;
 }
 .blue{
   background-color: blue;
+}
+
+h2{
+  font-size: 60px;
+  margin: 0 auto;
+  color:#17009C;
+  margin-bottom: 20px;
+
 }

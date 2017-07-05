@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var btn = document.querySelector("#addTaskButton");
   var ul = document.querySelector("ul");
   var completedBtn = document.querySelector("#removeFinishedTasksButton");
-  
+  var tasksLeft = document.querySelector("h3");
+  console.log(tasksLeft);
 
   var value = 0;
 
   input.oninput = handleInput;
   function handleInput(event) {
     value = event.target.value;
-    console.log(value);
     return value;
   }
 
@@ -34,18 +34,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
       delet.innerText = "Delete"
       console.log(value);
       input.value = " ";
-
       return;
     } else {
       alert("task has to be longer then 5 and shorter then 100");
     }
   }
 
-  document.querySelector(".container").addEventListener("mouseover", function() {
+  document.querySelector(".box").addEventListener("mouseover", function() {
 
     if (document.querySelector(".delete") != null) {
+
       [...document.querySelectorAll(".delete")].forEach(function(el) {
         el.addEventListener("click", function() {
+
           el.parentNode.remove();
 
         });
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         el.addEventListener("click", function() {
           el.classList.add("blue");
           el.dataset.value = "1";
-          console.log(el);
+
         });
 
       });
